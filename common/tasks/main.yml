@@ -1,0 +1,11 @@
+---
+# tasks file for common
+
+- name: Update repositories cache and install common package
+  apt:
+    name:
+      - htop
+      - iftop
+      - iotop
+      - jq
+    update_cache: yes
